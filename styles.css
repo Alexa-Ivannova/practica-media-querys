@@ -67,6 +67,10 @@ nav {
 
   li {
     list-style: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
     a {
       text-decoration: none;
       color: black;
@@ -106,8 +110,8 @@ nav {
 /* articulos blog */
 .articulosBlog {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1em;
 
   .articulo {
@@ -220,6 +224,61 @@ footer {
       width: 50%;
       justify-content: flex-start;
       gap: 0.5em;
-      }
+    }
+  }
+}
+
+@media (min-width: 1270px) {
+  main {
+    padding: 0 20px;
+  }
+  nav {
+    flex-direction: row;
+    gap: 1em;
+
+    #menuHamburguesa {
+      display: none;
+    }
+  }
+
+  #menu {
+    height: 100%;
+    position: static;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    padding-top: 0;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.2em;
+
+    p {
+      display: none;
+    }
+
+    li:hover {
+      background-color: rgb(2, 231, 231);
+    }
+  }
+
+  .anunciosArticulos {
+    .articulosBlog {
+      width: 70%;
+    }
+
+    .anuncios {
+      width: 30%;
+    }
+  }
+
+  .articulosBlog {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px;
+
+    .articulo {
+      height: 500px;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 }
