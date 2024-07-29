@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: red;
+  max-width: 1500px;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+
+header {
+  background-color: #d8d8d8;
+  width: 100%;
+  height: 90px;
+}
+
+nav {
+  /* background-color: bisque; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 1rem;
+
+  .bx-menu {
+    font-size: 2rem;
+  }
+}
+
+.logoNav {
+  /* background-color:green; */
+  height: 80%;
+
+  img {
+    height: 100%;
+  }
+}
+
+/* sección menú */
+.menu {
+  background-color: #d8d8d8;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-top: 4.5rem;
+  transition: all 0.2s ease-in-out;
+
+  p {
+    font-size: 1.3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+  }
+
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+/* sección blog */
+.contenidoPrincipal {
+  /* background-color: blue; */
+  width: 100%;
+}
+
+.titulos {
+  /* background-color: green; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .imgTitulo {
+    /* background-color: blueviolet; */
+    height: 8rem;
+    margin-bottom: -1rem;
+
+    img {
+      height: 80%;
+    }
+  }
+
+  div {
+    h1,
+    h2 {
+      /* background-color: aquamarine; */
+      text-align: center;
+    }
+  }
+}
+
+/* articulos blog */
+.articulosBlog {
+  /* background-color: blueviolet; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .articulo {
+    /* background-color: green; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .infArticulo {
+        /* background-color: yellow; */
+        width: 100%;
+        padding:10px;
+
+        h2, h3{
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            margin: 0.5rem 0;
+        }
+      }
+    }
+  }
+
+  .imgArticulo {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+

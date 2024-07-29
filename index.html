@@ -19,17 +19,13 @@
     <main>
         <header>
             <nav>
-                <div>
-                    <div>
-                        <img src="/Public/Img/Logo.png" alt="Logo">
-                    </div>
-                    <div>
-                        <h1>MOÑO Y HUESOS</h1>
-                        <h2>Un blog de otro mundo</h2>
-                    </div>
+                <div class="logoNav">
+                    <img src="/Public/Img/Logo.png" alt="Logo">
                 </div>
 
-                <ul>
+                <i id="menuHamburguesa" class='bx bx-menu'></i>
+                <ul id="menu" class="menu">
+                    <p id="cerrarMenu">X</p>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="#servicios">Servicios</a></li>
@@ -42,14 +38,26 @@
             </nav>
         </header>
 
-        <section>
-            <section>
+        <section class="contenidoPrincipal">
 
-                <article>
-                    <div>
+            <!-- TITULO Y SUBTITULO -->
+            <section class="titulos">
+                <div class="imgTitulo">
+                    <img src="/Public/Img/Logo.png" alt="Logo">
+                </div>
+                <div>
+                    <h1>MOÑO Y HUESOS</h1>
+                    <h2>Un blog de otro mundo</h2>
+                </div>
+            </section>
+
+            <!-- SECCIÓN DE ARTICULOS BLOG -->
+            <section class="articulosBlog">
+                <article class="articulo">
+                    <div class="imgArticulo">
                         <img src="/Public/Img/Perro_1.webp" alt="Imagen de un perro">
                     </div>
-                    <div>
+                    <div class="infArticulo">
                         <h2>Cómo Entrenar a tu Perro</h2>
                         <h3>Consejos para un adiestramiento efectivo</h3>
                         <p>Entrenar a tu perro es esencial para asegurar una convivencia armoniosa. Comienza con
@@ -59,11 +67,11 @@
                     </div>
                 </article>
 
-                <article>
-                    <div>
+                <article class="articulo">
+                    <div class="imgArticulo">
                         <img src="/Public/Img/Gato.webp" alt="Imagen de un gato">
                     </div>
-                    <div>
+                    <div class="infArticulo">
                         <h2>Cuidado de Gatos Domésticos</h2>
                         <h3>Cómo mantener a tu felino feliz y saludable</h3>
                         <p>Los gatos son mascotas independientes pero requieren cuidados específicos. Asegúrate de
@@ -73,11 +81,11 @@
                     </div>
                 </article>
 
-                <article>
-                    <div>
+                <article class="articulo">
+                    <div class="imgArticulo">
                         <img src="/Public/Img/Hamster.webp" alt="Imagen de un hámster">
                     </div>
-                    <div>
+                    <div class="infArticulo">
                         <h2>El Mundo de los Hámsters</h2>
                         <h3>Cosas que debes saber antes de tener uno</h3>
                         <p>Los hámsters son mascotas pequeñas y adorables que requieren un cuidado especial. Necesitan
@@ -87,11 +95,11 @@
                     </div>
                 </article>
 
-                <article>
-                    <div>
+                <article class="articulo">
+                    <div class="imgArticulo">
                         <img src="/Public/Img/Peces_1.webp" alt="Imagen de un pez">
                     </div>
-                    <div>
+                    <div class="infArticulo">
                         <h2>Cuidado de Peces de Acuario</h2>
                         <h3>Mantén tu acuario en perfectas condiciones</h3>
                         <p>Tener un acuario puede ser relajante y decorativo, pero requiere mantenimiento regular.
@@ -130,5 +138,6 @@
         </footer>
     </main>
 </body>
+<script src="/index.js"></script>
 
 </html>
